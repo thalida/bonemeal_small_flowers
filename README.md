@@ -36,7 +36,7 @@ Gives the player 1 invisbile invincible item frame
 ```PostScript
 /trigger bsf_kill_frame
 ```
-If the player is standing on an invisible invincible item frame it'l kill the frame (remove it from the game)
+If the player is standing on an invisible invincible item frame, running this command will kill the frame (removing it from the game)
 Note: you can get another item frame by running the give frame command again
 [source code: [give_frame.mcfunction](/data/bonemeal_small_flowers/functions/triggers/kill_frame.mcfunction)]
 
