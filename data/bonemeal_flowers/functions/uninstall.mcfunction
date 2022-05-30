@@ -1,0 +1,3 @@
+schedule clear bonemeal_flowers:tick
+scoreboard objectives remove bf_give_frame
+scoreboard objectives remove bf_kill_frame
