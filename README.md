@@ -10,30 +10,31 @@
 
 ## How it works
 ### Custom Frame
-`/trigger dsf_give_frame` gives the player an invisible invulnerable item frame
-Invisiblity is required for the illusion of built-in gameplay
-Invulnerability is required so you don't accidentally break the item frame (see: `/trigger dsf_kill_frame` for removing placed frames)
+`/trigger bsf_give_frame` gives the player an invisible invulnerable item frame  
+Invisiblity is required for the illusion of built-in gameplay  
+Invulnerability is required so you don't accidentally break the item frame (see: `/trigger bsf_kill_frame` for removing placed frames)  
 
 ### Bonemeal Magic
-The datapack detects if there's an invisible invulnerable item frame containing a bonemeal item, it then checks if the block the frame is on also includes a [small flower](https://minecraft.fandom.com/wiki/Tag#blocks_small_flowers)[^1]
+The datapack detects if there's an invisible invulnerable item frame containing a bonemeal item, it then checks if the block the frame is on also includes a [small flower](https://minecraft.fandom.com/wiki/Tag#blocks_small_flowers)[^1]  
+
 If a small flower is detected:
-- The datapack gives the player 2 of the matching flower,
-- Shows partical effects for user feedback, mimicing the behavior of bonemealing tall flowers, and
-- Deletes the bonemeal in the frame ("using" up the bonemeal"
+- The datapack gives the player 2 of the same flower, then
+- Shows partical effects for user feedback (mimicing the behavior of bonemealing tall flowers), and
+- Deletes the bonemeal in the frame "using" up the bonemeal
 
 View the actual source code (warning, it's not my best work, but it functions):
 source: [on_bonemeal.mcfunction](/data/bonemeal_small_flowers/functions/on_bonemeal.mcfunction)
 
 ## Commands
 
-```
-/trigger dsf_give_frame
+```PostScript
+/trigger bsf_give_frame
 ```
 Gives the player 1 invisbile invincible item frame
 [source code: [give_frame.mcfunction](/data/bonemeal_small_flowers/functions/triggers/give_frame.mcfunction)]
 
-```
-/trigger dsf_kill_frame
+```PostScript
+/trigger bsf_kill_frame
 ```
 If the player is standing on an invisible invincible item frame it'l kill the frame (remove it from the game)
 Note: you can get another item frame by running the give frame command again
