@@ -4,7 +4,7 @@
 
 ## Usage
 1. Run `/trigger dsf_give_frame` to add a custom item frame to your inventory  
-1. Place the custom frame on top of a block with a small flower
+1. Place the custom frame on the top of a block with a small flower
 1. Now bonemeal the ground  
 1. Magic!✨ You've used up a bonemeal AND harvested two identical flowers  
 
