@@ -1,6 +1,9 @@
 # Bonemeal Small Flowers
 ![bsf](https://user-images.githubusercontent.com/3401715/170926096-54f5ffe2-5fba-4148-847a-9bd75c4ee802.gif)
 
+## Installation
+Download the latest release, and add the zipped datapack to your Minecraft world datapacks folder.  
+![datapack_folder](https://user-images.githubusercontent.com/3401715/170929817-7689b5e9-3f60-41b5-83df-91bad65243ad.png)
 
 ## Usage
 1. Run `/trigger dsf_give_frame` to add a custom item frame to your inventory
@@ -22,23 +25,23 @@ If a small flower is detected:
 - Shows partical effects for user feedback (mimicing the behavior of bonemealing tall flowers), and
 - Deletes the bonemeal in the frame "using" up the bonemeal
 
-View the actual source code (warning, it's not my best work, but it functions):
-source: [on_bonemeal.mcfunction](/data/bonemeal_small_flowers/functions/on_bonemeal.mcfunction)
+<sub>[View source](/data/bonemeal_small_flowers/functions/on_bonemeal.mcfunction)[^2]</sub>
+
 
 ## Commands
 
 ```PostScript
 /trigger bsf_give_frame
 ```
-Gives the player 1 invisbile invincible item frame
-[source code: [give_frame.mcfunction](/data/bonemeal_small_flowers/functions/triggers/give_frame.mcfunction)]
+Gives the player 1 invisbile invincible item frame  
+<sub>[View source](/data/bonemeal_small_flowers/functions/triggers/give_frame.mcfunction)</sub>
 
 ```PostScript
 /trigger bsf_kill_frame
 ```
-If the player is standing on an invisible invincible item frame, running this command will kill the frame (removing it from the game)
-Note: you can get another item frame by running the give frame command again
-[source code: [give_frame.mcfunction](/data/bonemeal_small_flowers/functions/triggers/kill_frame.mcfunction)]
+If the player is standing on an invisible invincible item frame, running this command will kill the frame (removing it from the game)  
+<sub>[View source](/data/bonemeal_small_flowers/functions/triggers/kill_frame.mcfunction)</sub>
 
 
 [^1]: Wither roses are excluded from this datapack
+[^2]: Not my best work. But, it functions.
