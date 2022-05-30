@@ -1,6 +1,6 @@
 {
 	"values": [
-		"bonemeal_flowers:load",
-		"bonemeal_flowers:tick"
+		"bonemeal_small_flowers:load",
+		"bonemeal_small_flowers:tick"
 	]
 }
